@@ -1,5 +1,5 @@
 {
-    "name": "kucrut/wp-bridge-menus",
+    "name": "kucrut/bridge-menus",
     "description": "WP REST API endpoint for menus.",
     "keywords": ["wordpress", "rest", "menu"],
     "homepage": "https://github.com/kucrut/wp-bridge-menus",
