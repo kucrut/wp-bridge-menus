@@ -23,16 +23,3 @@ function bridge_menus_register_routes() {
 	$menu_items_controller->register_routes();
 }
 add_action( 'rest_api_init', 'bridge_menus_register_routes' );
-
-
-if ( ! function_exists( 'bridge_strip_home_url' ) ) :
-	/**
-	 * Strip home URL from string
-	 *
-	 * @param  string $string Text.
-	 * @return string
-	 */
-	function bridge_strip_home_url( $string ) {
-		return str_replace( home_url(), '', $string );
-	}
-endif;
