@@ -23,7 +23,7 @@ class Bridge_Walker_Nav_Menu extends Walker_Nav_Menu {
 			'order'       => (int) $item->menu_order,
 			'parent'      => absint( $item->menu_item_parent ),
 			'title'       => $title,
-			'url'         => bridge_strip_home_url( $item->url ),
+			'url'         => $item->url,
 			'attr'        => $item->attr_title,
 			'target'      => $item->target,
 			'classes'     => $classes,
