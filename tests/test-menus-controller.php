@@ -114,4 +114,18 @@ class Bridge_Test_REST_Menu_Items_Controller extends Bridge_Test_Case {
 
 		$this->assert_menu( $data );
 	}
+
+	public function filter_menu_item( $item ) {
+		$item['title'] = 'Yo!';
+
+		return $item;
+	}
+
+	public function test_bridge_rest_menu_item_filter() {
+		add_filter( 'bridge_rest_menu_item', array( $this, 'filter_menu_item' ) );
+		$data = $this->get_menu( $this->menu->term_id );
+		remove_filter( 'bridge_rest_menu_item', array( $this, 'filter_menu_item' ) );
+
+		$this->assertEquals( 'Yo!', $data['items'][0]['title'] );
+	}
 }
