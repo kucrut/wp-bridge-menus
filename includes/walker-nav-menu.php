@@ -18,7 +18,7 @@ class Bridge_Walker_Nav_Menu extends Walker_Nav_Menu {
 		$title   = apply_filters( 'nav_menu_item_title', $title, $item, $args, $depth );
 		$classes = apply_filters( 'nav_menu_css_class', array_filter( $item->classes ), $item, $args, $depth );
 
-		return array(
+		$item = array(
 			'id'          => absint( $item->ID ),
 			'order'       => (int) $item->menu_order,
 			'parent'      => absint( $item->menu_item_parent ),
@@ -35,6 +35,18 @@ class Bridge_Walker_Nav_Menu extends Walker_Nav_Menu {
 			'type_label'  => $item->type_label,
 			'children'    => array(),
 		);
+
+		/**
+		 * Filters prepared menu item
+		 *
+		 * @param  object $item  Prepared menu item.
+		 * @param  array  $args  Arguments passed to walk().
+		 * @param  int    $depth Item's depth.
+		 * @return array
+		 */
+		$item = apply_filters( 'bridge_rest_menu_item', $item, $args, $depth );
+
+		return $item;
 	}
 
 
