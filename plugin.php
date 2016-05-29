@@ -3,7 +3,7 @@
 /**
  * Plugin Name: Bridge: Menus
  * Description: WP REST API endpoint for menus.
- * Version: 0.1.0
+ * Version: 0.2.0
  * Author: Dzikri Aziz
  * Author URI: http://kucrut.org
  * Plugin URI: https://github.com/kucrut/wp-bridge-menus
