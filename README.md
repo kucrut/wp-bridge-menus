@@ -92,6 +92,9 @@ This plugin was primarily built for [Minnie](https://github.com/kucrut/minnie).
 ```
 
 ## Changelog
+### 0.3.0
+* Remove WP-API from dependencies.
+
 ### 0.2.0
 * Don't strip `home_url()` from `item->url`, let Bridge handle it.
 
