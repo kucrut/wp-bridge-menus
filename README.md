@@ -4,8 +4,7 @@ WP REST API endpoint for menus.
 This plugin was primarily built for [Minnie](https://github.com/kucrut/minnie).
 
 ## Requirements
-* WordPress 4.5+
-* WP API 2.0-beta13+
+* WordPress 4.7.2+
 
 ## Endpoints
 * By Menu ID: `GET /wp-json/bridge/v1/menus/<id>`
