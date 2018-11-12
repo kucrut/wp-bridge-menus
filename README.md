@@ -91,6 +91,9 @@ This plugin was primarily built for [Minnie](https://github.com/kucrut/minnie).
 ```
 
 ## Changelog
+### 0.3.1
+* Fix Walker
+
 ### 0.3.0
 * Remove WP-API from dependencies.
 
